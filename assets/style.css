@@ -293,3 +293,17 @@ body {
     grid-template-columns: minmax(0, 327px) minmax(0, 340px) minmax(0, 345px);
   }
 }
+
+/* Companies section */
+
+.companies {
+  display: grid;
+  row-gap: 60px;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .companies {
+    column-gap: 6.5%;
+    grid-template-columns: repeat(5, max-content);
+  }
+}
