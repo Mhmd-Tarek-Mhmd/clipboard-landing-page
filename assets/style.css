@@ -60,6 +60,7 @@ a {
   width: 310px;
   cursor: pointer;
   max-width: 100%;
+  font-size: 19px;
   font-weight: 600;
   border-radius: 30px;
   will-change: opacity;
@@ -73,6 +74,7 @@ a {
 .actions:has(.btn) {
   display: flex;
   row-gap: 20px;
+  margin-top: 50px;
   align-items: center;
   flex-direction: column;
 }
@@ -157,9 +159,6 @@ body {
 }
 .header .hero .title {
   font-size: 1.9rem;
-}
-.header .actions {
-  margin-top: 50px;
 }
 @media (min-width: 992px) {
   .header {
@@ -305,5 +304,34 @@ body {
   .companies {
     column-gap: 6.5%;
     grid-template-columns: repeat(5, max-content);
+  }
+}
+
+/* Download section */
+
+.download {
+  padding-block: 175px 170px;
+}
+.download-header {
+}
+.download-header .title {
+  font-size: 1.7rem;
+}
+.download-header .txt {
+}
+
+@media (min-width: 992px) {
+  .download {
+    padding-block: 165px 160px;
+  }
+  .download-header {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+  .download-header .title {
+    font-size: 2.2rem;
+  }
+  .download-header .txt {
+    font-size: 18px;
   }
 }
