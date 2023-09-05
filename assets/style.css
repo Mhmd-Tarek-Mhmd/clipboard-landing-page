@@ -226,3 +226,36 @@ body {
     max-width: 335px;
   }
 }
+
+/* Access section */
+
+.access {
+  padding-bottom: 140px;
+}
+.access-header .title {
+  font-size: 1.6rem;
+}
+.access-header .txt {
+}
+.access-img {
+  max-width: 100%;
+  margin-top: 66px;
+}
+@media (min-width: 992px) {
+  .access {
+    padding-bottom: 170px;
+  }
+  .access-header {
+    max-width: 670px;
+    margin-inline: auto;
+  }
+  .access-header .title {
+    font-size: 2.2rem;
+  }
+  .access-header .txt {
+    font-size: 18px;
+  }
+  .access-img {
+    margin-top: 120px;
+  }
+}
