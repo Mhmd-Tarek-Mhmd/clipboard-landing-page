@@ -121,7 +121,7 @@ a {
   }
 }
 .info-block .title {
-  line-height: 1;
+  line-height: 1.3;
   font-weight: 600;
   color: var(--dark-grayish-blue);
 }
@@ -156,7 +156,6 @@ body {
 .header .hero {
 }
 .header .hero .title {
-  line-height: 1.3;
   font-size: 1.9rem;
 }
 .header .actions {
@@ -176,5 +175,54 @@ body {
   }
   .header .hero .txt {
     font-size: 20px;
+  }
+}
+
+/* Track section */
+
+.track {
+  padding-bottom: 200px;
+}
+.track-header {
+}
+.track-header .title {
+  font-size: 1.75rem;
+}
+.track-wrapper {
+  margin-top: 65px;
+}
+.track-image {
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding-inline: 24px;
+}
+.track-unit:not(:last-child) {
+  margin-bottom: 60px;
+}
+.track-unit .title {
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  .track {
+    overflow-x: hidden;
+    padding-bottom: 160px;
+  }
+  .track-header {
+    max-width: 690px;
+  }
+  .track-wrapper {
+    display: grid;
+    margin-top: 85px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .track-image {
+    margin-bottom: 0;
+    padding-inline: 0;
+    position: relative;
+    left: -20px;
+  }
+  .track-unit {
+    text-align: left;
+    max-width: 335px;
   }
 }
