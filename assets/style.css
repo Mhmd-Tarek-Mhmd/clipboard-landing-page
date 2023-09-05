@@ -1,0 +1,138 @@
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+
+  --font-family: "Bai Jamjuree", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a,
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Components */
+
+.container {
+  width: 100%;
+  padding-inline: 24px;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.btn {
+  color: #fff;
+  height: 60px;
+  width: 310px;
+  cursor: pointer;
+  max-width: 100%;
+  font-weight: 600;
+  border-radius: 30px;
+  will-change: opacity;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  box-shadow: inset 0px -2px 1px rgb(0 0 0 / 24%);
+}
+.btn:is(:hover, :focus-visible) {
+  opacity: 0.9;
+}
+.actions:has(.btn) {
+  display: flex;
+  row-gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .btn {
+    width: 225px;
+  }
+  .actions:has(.btn) {
+    column-gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.btn-cyan {
+  background-color: var(--cyan);
+}
+.btn-blue {
+  background-color: var(--light-blue);
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+}
+.info-block-center {
+  text-align: center;
+}
+.info-block.sm-gap {
+  row-gap: 20px;
+}
+.info-block.md-gap {
+  row-gap: 25px;
+}
+.info-block.lg-gap {
+  row-gap: 30px;
+}
+@media (min-width: 992px) {
+  .info-block.sm-gap-desktop {
+    row-gap: 20px;
+  }
+  .info-block.md-gap-desktop {
+    row-gap: 25px;
+  }
+  .info-block.lg-gap-desktop {
+    row-gap: 30px;
+  }
+}
+.info-block .title {
+  line-height: 1;
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+.info-block .txt {
+  line-height: 1.5;
+  color: var(--grayish-blue);
+}
+
+/* Page */
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
