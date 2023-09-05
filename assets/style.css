@@ -136,3 +136,45 @@ body {
   min-height: 100vh;
   font-family: var(--font-family);
 }
+
+/* Header area */
+
+.header {
+  background-size: 100%;
+  padding-block: 120px 165px;
+  background-repeat: no-repeat;
+  background-image: url(images/bg-header-mobile.png);
+}
+.header-wrapper {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+.header .logo {
+  margin-bottom: 60px;
+}
+.header .hero {
+}
+.header .hero .title {
+  line-height: 1.3;
+  font-size: 1.9rem;
+}
+.header .actions {
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .header {
+    padding-block: 130px 160px;
+    background-image: url(images/bg-header-desktop.png);
+  }
+  .header-wrapper {
+    padding: 0;
+    max-width: 690px;
+  }
+  .header .hero .title {
+    font-size: 2.75rem;
+  }
+  .header .hero .txt {
+    font-size: 20px;
+  }
+}
